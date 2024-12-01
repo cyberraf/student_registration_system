@@ -1,6 +1,6 @@
 #include<Course.h>
 
-Course::Course(string courseName, string courseDescription, string courseID, string courseIDNum, vector<Section> listOfSections){}
+Course::Course(string courseName, string courseDescription, string courseID, string courseIDNum){}
 
 string Course::getCourseName(){
     return courseName;
@@ -14,14 +14,6 @@ string Course::getCourseID() {
     return courseID;
 }
 
-vector<Section> Course::getListOfSections() {
-    return listOfSections;
-}
-
-Department Course::getCourseDepartment() {
-    return courseDepartment;
-}
-
 void Course::printCourseName(){
     cout << courseName << endl;
 }
@@ -32,16 +24,6 @@ void Course::printCourseDescription(){
 
 void Course::printCourseID(){
     cout << courseID << endl;
-}
-
-void Course::printListOfSections(){
-    for(int i = 0; i < listOfSections.size(); i++){
-        listOfSections[i].printSection();
-    }
-}
-
-void Course::addSectionToList(Section newSection){
-    listOfSections.push_back(newSection);
 }
 
 //removeSectionFromList requires the Section ID as the parameter(this is a string)

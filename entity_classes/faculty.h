@@ -1,7 +1,7 @@
 #ifndef FACULTY_H
 #define FACULTY_H
 
-#include "user.h"
+#include "User.h"
 #include <iostream>
 #include <vector>
 

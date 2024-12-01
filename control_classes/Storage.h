@@ -1,8 +1,8 @@
 #include <vector>
 #include <string>
-#include "Student.h"
+#include "User.h"
 #include "Admin.h"
-#include "Faculty.h"
+#include "faculty.h"
 #include "Department.h"
 #include <string>
 #include <iostream>

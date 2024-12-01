@@ -2,9 +2,7 @@
 #define COURSE_H
 
 #include<iostream>
-#include<Student.h>
-#include<Faculty.h>
-#include<Section.h>
+#include<faculty.h>
 #include<Department.h>
 
 class Course{
@@ -14,18 +12,16 @@ class Course{
     //courseID consists of the department ID plus an courseIDNum
     string courseID;
     string courseIDNum;
-    vector<Section> listOfSections;
     public:
     string getCourseName();
     string getCourseDescription();
     string getCourseID();
-    vector<Section> getListOfSections();
     Department getCourseDepartment();
     void printCourseName();
     void printCourseDescription();
     void printCourseID();
     void printListOfSections();
-    void addSectionToList(Section);
+
     //removeSectionFromList requires the Section ID as the parameter(this is a string)
     void removeSectionFromList(string);
     void updateCourseName(string);
